@@ -144,7 +144,7 @@ Stores:
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/Manasakoka252/GreenBloomProject.git
 ```
 
 ### 2. Open the project folder
@@ -153,7 +153,7 @@ git clone YOUR_GITHUB_REPOSITORY_URL
 cd GreenBloomProject
 ```
 
-### 3. Install the required package
+### 3. Install the required packages
 
 ```bash
 pip install -r requirements.txt
@@ -161,23 +161,32 @@ pip install -r requirements.txt
 
 ### 4. Set up MySQL
 
-Create the database and tables using the SQL commands provided in:
+Make sure MySQL is installed and running.
+
+Use the SQL commands provided in:
 
 ```text
 database.sql
 ```
 
+to create the required database and tables.
+
 ### 5. Configure the database connection
 
-Open:
+Create a `.env` file in the project folder and add your MySQL password:
 
 ```text
-db_connection.py
+DB_PASSWORD=your_mysql_password
 ```
 
-and enter your own MySQL credentials.
+The `.env` file is excluded from Git using `.gitignore`.
 
-**Do not upload your actual MySQL password to GitHub.**
+### 6. Run the application
+
+```bash
+python main.py
+```
+
 
 ## ▶️ How to Run
 
